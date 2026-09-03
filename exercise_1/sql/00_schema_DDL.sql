@@ -1,0 +1,11 @@
+--catalog and schema creation
+
+CREATE CATALOG IF NOT EXISTS retail_demo;
+USE CATALOG retail_demo;
+
+CREATE SCHEMA IF NOT EXISTS bronze;
+CREATE SCHEMA IF NOT EXISTS silver;
+CREATE SCHEMA IF NOT EXISTS gold;
+CREATE SCHEMA IF NOT EXISTS rejected_rows;
+
+CREATE VOLUME IF NOT EXISTS bronze.landing;

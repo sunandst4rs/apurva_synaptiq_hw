@@ -1,4 +1,4 @@
-#read_csv files to infer schema"
+#read_csv files to discover what's in them and possibly infer schema
 
 directory = "/Workspace/Users/apurvamody@live.com/apurva_synaptiq_hw/exercise_1/exercise_source_files/"
 
