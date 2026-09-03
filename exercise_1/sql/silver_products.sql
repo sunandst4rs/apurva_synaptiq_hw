@@ -1,4 +1,5 @@
---load from bronze
+--load products from bronze
+--some product names are mixed case, so normalize using initcap
 USE CATALOG retail_demo;
 
 CREATE OR REFRESH MATERIALIZED VIEW silver.products (
