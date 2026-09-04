@@ -1,4 +1,4 @@
-**Lakehouse Declartive Pipeline DAG**
+**Lakehouse Declarative Pipeline DAG**
 ![...](pipeline_run_screenshot.png)
 
 
