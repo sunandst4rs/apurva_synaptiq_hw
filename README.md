@@ -15,3 +15,7 @@ The solution is built natively in Databricks, using Unity Catalog to organize th
 **Silver** is where the real work happens: dates, prices, and regions get standardized into consistent formats, and duplicate or corrected orders are resolved so each order is only counted once, using its most recent version. Rows that can't be reliably cleaned (for example, missing a price or region) are set aside into a separate table rather than silently dropped, so nothing disappears without a record of why.
 
 **Gold** is the final output: daily sales totals broken out by product category and region, giving net revenue, order count, units sold, and average order value — ready to hand off for reporting or analysis.
+
+## On The Use of AI
+
+This project was assisted by a chat based LLM (not an IDE based coding assistant). The model was helpful primarily in the rapid creation of DDL and DML. It had access to the exercise files, and took a 'by the book approach' to some of the design that I had to override. Please see the AI-use-notes.md file for more detailed information. 
