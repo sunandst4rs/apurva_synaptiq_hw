@@ -15,3 +15,4 @@ for path in csv_files:
  
 result = spark.createDataFrame(rows, ["file_name", "header_columns", "inferred_datatypes"])
 display(result)
+

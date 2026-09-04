@@ -10,7 +10,7 @@ WITH deduped AS (
     SELECT o.*,
       row_number() OVER (
         PARTITION BY order_id
-        ORDER BY _metadata.file_modification_time DESC, _metadata.file_name DESC
+        ORDER BY source_file_modified DESC, source_file DESC
       ) AS rn
     FROM bronze.orders o
   )
